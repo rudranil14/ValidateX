@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 12px 19px;
+    min-width: fit-content;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+    font-size: 13px;
+}
+
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(141, 177, 189);
+    text-shadow: 1px 3px 2px black, 0 0 30px rgb(107, 255, 255), 0 0 9px rgb(13, 173, 173);
+}
+
+main {
+    min-height: 88vh;
+    padding: 0px;
+    
+}
+
+.logo img {
+    max-width: 25px;
+    filter: invert(1);
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url();
+
+    /* Add the blur effect */
+    filter: blur(10px);
+
+
+    height: 100%;
+}
+
+
+.container {
+    max-width: 100vw;
+    margin: auto;
+    padding: 201px 50px;
+    /* filter: blur(10px); */
+    /* background-image: url("../image/background.jpg"); */
+    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.95),rgb(232, 251, 251));
+    background-size: cover;
+    height: 331px;
+    min-height: 80vh;
+    border-radius: 1px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* filter: brightness(60%); */
+    background-size: cover;
+
+}
+
+h1 {
+    color: rgb(193, 224, 228);
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 40px;
+
+}
+
+p {
+    color: rgb(193, 224, 228);
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+}
+
+form {
+    color: rgb(191, 194, 219);
+    colour: inherit;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+
+.content form{
+    width: 300px;
+    height: 200px ;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(13px);
+    color: rgb(0, 0, 0);
+    justify-content:center;
+    align-items:center;
+    border-radius: 50px ;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 25px 15px;
+    top: 43%;
+
+}
+
+
+
+
+
+.btn {
+    background-color: black;
+    color: aliceblue;
+    padding: 9px 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+    
+}
+
+.Results h2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 324px;
+    margin-left: 838px;
+    margin-bottom: 35px;
+    /* color: rgb(250, 250, 250); */
+}
+
+.Results div{
+    margin-left: 25px;
+    margin-top: 7px;
+    text-align: center;
+    padding: 1px;
+    /* color: azure; */
+} 
+
+
+footer {
+    font-size: 12px;
+    background-color: rgb(34, 34, 32);
+    color: aliceblue;
+    display: flex;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url("backgrounnd.webp");
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    form {
+        font-size: 15px;
+    }
+
+    .content form{
+        color: rgb(0, 0, 0);
+        width: 289px;
+        height: 145px
+        top: 40%;
+    }
+
+    .container {
+        font-size: 12px;
+        min-height: 59vh;
+    }
+
+    .Results h2{
+        margin-left: 98px;
+        margin-top: 246px;
+    }
+
+    #resultCont div::first-letter{
+        text-transform: uppercase;
+        margin-left: -58px;
+    }
+
+    /* .Results div{
+        margin-left: 100px;
+    } */
+    
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 6px 0;
+    }
+
+    .logo span {
+        font-size: 25px;
+    }
+
+    .logo img {
+        max-width: 25px;
+        filter: invert(1);
+    }
+}

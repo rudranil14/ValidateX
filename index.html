@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate_X -Email validator for your business </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/email.svg" alt="">
+                <span>Validate_X</span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">About Us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="container">
+        <h1>Enter your Email to validate</h1>
+        <p>Make your email inquiries easier and faster</p>
+        <div class="content">
+        <form action="/submit" method="post">
+            <!-- Text input for username -->
+            <label for="name">Name :</label>
+                <input placeholder="   Enter your name" type="text" id="name" name="name" required>
+                <br><br>
+                
+                <!-- Password input -->
+                <label for="Email">Email id :</label>
+                <input placeholder="    Enter your email" type="text" id="email" name="email" required>
+                <br><br>
+                
+                <!-- Radio buttons for gender -->
+                <!-- <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br> -->
+                
+                <!-- Submit button -->
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+        <div  class="Results">
+            <h2>Your Results</h2>
+            <div id="resultCont"> 
+                your results will show here
+                
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        Copyright | Validate_x.com | All Rights reserved |
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
